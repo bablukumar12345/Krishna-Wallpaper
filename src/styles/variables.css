@@ -10,6 +10,7 @@
   --color-ivory-deep: #EFE8DA;     /* secondary surface */
   --color-ink: #2B2622;            /* primary text / deep espresso */
   --color-ink-soft: #5C544B;       /* secondary text */
+  --color-navbar-bg: #7C9573;      /* navbar background — lighter sage-green */
   --color-brass: #B08D57;          /* signature accent - antique brass */
   --color-brass-light: #D8BD8D;    /* light brass / hover */
   --color-sage: #7C8B6F;           /* secondary accent - sage green */
@@ -61,7 +62,7 @@
 
   /* ---- Layout ---- */
   --container-max: 1280px;
-  --nav-height: 78px;
+  --nav-height: 62px;
 }
 
 @media (prefers-reduced-motion: reduce) {

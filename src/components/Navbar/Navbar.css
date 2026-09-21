@@ -9,17 +9,14 @@
   border-left: none;
   border-right: none;
   border-top: none;
-  background: rgba(247, 243, 236, 0.65);
-  transition: box-shadow var(--dur-med) var(--ease-swatch), background var(--dur-med);
+  border-bottom: 2px solid var(--color-ink);
+  background: var(--color-navbar-bg);
+  color: var(--color-ink);
+  transition: box-shadow var(--dur-med) var(--ease-swatch);
   box-shadow: none;
 }
 .navbar--scrolled {
   box-shadow: var(--shadow-soft);
-  background: rgba(247, 243, 236, 0.85);
-}
-.navbar--scrolled {
-  box-shadow: var(--shadow-soft);
-  background: rgba(247, 243, 236, 0.85);
 }
 
 .navbar__inner {
@@ -37,10 +34,10 @@
   gap: var(--space-xs);
   font-family: var(--font-display);
   font-weight: 600;
-  font-size: 1.25rem;
-  color: var(--color-ink);
+  font-size: 1.45rem;
   flex-shrink: 1;
   min-width: 0;
+  margin-left: -0.4rem;
 }
 
 .navbar__logo span {
@@ -51,7 +48,7 @@
 
 @media (max-width: 480px) {
   .navbar__logo {
-    font-size: 0.95rem;
+    font-size: 1.1rem;
   }
   .navbar__logo img {
     width: 32px;
@@ -86,7 +83,14 @@
 .navbar__links a.active::after {
   width: 100%;
 }
-.navbar__links a.active { color: var(--color-brass); }
+.navbar__links a.active {
+  color: var(--color-ink);
+  background: var(--color-ivory);
+  padding: 0.35rem 0.85rem;
+  border-radius: var(--radius-pill);
+  font-weight: 700;
+}
+.navbar__links a.active::after { display: none; }
 
 .navbar__dropdown { position: relative; }
 .navbar__dropdown-toggle {
@@ -95,7 +99,6 @@
   gap: 4px;
   font-weight: 600;
   font-size: var(--fs-small);
-  color: var(--color-ink);
 }
 .chev { font-size: 0.7rem; transition: transform var(--dur-fast); }
 
@@ -109,6 +112,7 @@
   min-width: 220px;
   padding: var(--space-sm);
   animation: fadeInUp var(--dur-fast) var(--ease-swatch) both;
+  color: var(--color-ink);
 }
 .navbar__dropdown-menu a {
   padding: 0.6rem 0.9rem;
@@ -151,14 +155,14 @@
     right: 0;
     flex-direction: column;
     align-items: flex-start;
-    background: rgba(247, 243, 236, 0.98);
-    backdrop-filter: var(--glass-blur);
+    background: var(--color-navbar-bg);
     padding: var(--space-lg);
     gap: var(--space-md);
     transform: translateY(-120%);
     opacity: 0;
     transition: transform var(--dur-med) var(--ease-swatch), opacity var(--dur-med);
     box-shadow: var(--shadow-soft);
+    color: var(--color-ink);
   }
   .navbar__links--open { transform: translateY(0); opacity: 1; }
   .navbar__dropdown { width: 100%; }
