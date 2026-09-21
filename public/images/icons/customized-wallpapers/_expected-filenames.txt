@@ -1,0 +1,3 @@
+Expected image files in this folder (/images/icons/customized-wallpapers):
+
+main_hader.webp

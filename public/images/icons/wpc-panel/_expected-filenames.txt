@@ -1,0 +1,3 @@
+Expected image files in this folder (/images/icons/wpc-panel):
+
+main_hader.webp

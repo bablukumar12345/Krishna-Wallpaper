@@ -1,0 +1,98 @@
+.lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    background: rgba(20, 16, 12, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-md);
+    animation: fadeIn var(--dur-fast) ease-out both;
+}
+
+.lightbox__box {
+    position: relative;
+    width: min(90vw, 480px);
+    background: var(--color-ivory);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lift);
+    padding: var(--space-md);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeInUp var(--dur-med) var(--ease-swatch) both;
+}
+
+.lightbox__close {
+    position: absolute;
+    top: var(--space-sm);
+    right: var(--space-sm);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: rgba(43, 38, 34, 0.08);
+    color: var(--color-ink);
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background var(--dur-fast);
+    z-index: 2;
+}
+
+.lightbox__close:hover {
+    background: rgba(43, 38, 34, 0.16);
+}
+
+.lightbox__viewport {
+    width: 100%;
+    height: min(60vh, 420px);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-ivory-deep);
+}
+
+.lightbox__viewport.is-zoomed {
+    overflow: auto;
+    align-items: flex-start;
+    justify-content: flex-start;
+    -webkit-overflow-scrolling: touch;
+}
+
+.lightbox__image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    cursor: zoom-in;
+    transition: transform var(--dur-med) var(--ease-swatch);
+    user-select: none;
+    display: block;
+}
+
+.lightbox__viewport.is-zoomed .lightbox__image {
+    max-width: none;
+    max-height: none;
+    width: 180%;
+    cursor: zoom-out;
+}
+
+.lightbox__hint {
+    margin-top: var(--space-sm);
+    color: var(--color-ink-soft);
+    font-size: var(--fs-xs);
+    text-align: center;
+}
+
+@media (max-width: 480px) {
+    .lightbox__box {
+        width: min(94vw, 380px);
+        padding: var(--space-sm);
+    }
+
+    .lightbox__viewport {
+        height: min(50vh, 340px);
+    }
+}

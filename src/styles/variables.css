@@ -1,0 +1,74 @@
+/* ==========================================================================
+   KRISHNA WALLPAPER — DESIGN TOKENS
+   Palette: warm ivory base, deep espresso ink, antique-brass accent,
+   sage highlight. Inspired by fabric swatches, brass hardware and
+   soft daylight through sheer curtains — the materials this brand sells.
+   ========================================================================== */
+:root {
+  /* ---- Color palette ---- */
+  --color-ivory: #F7F3EC;          /* base background */
+  --color-ivory-deep: #EFE8DA;     /* secondary surface */
+  --color-ink: #2B2622;            /* primary text / deep espresso */
+  --color-ink-soft: #5C544B;       /* secondary text */
+  --color-brass: #B08D57;          /* signature accent - antique brass */
+  --color-brass-light: #D8BD8D;    /* light brass / hover */
+  --color-sage: #7C8B6F;           /* secondary accent - sage green */
+  --color-white: #FFFFFF;
+  --color-glass-bg: rgba(255, 255, 255, 0.55);
+  --color-glass-border: rgba(255, 255, 255, 0.35);
+  --color-glass-bg-dark: rgba(43, 38, 34, 0.55);
+  --color-success: #6B8E5A;
+  --color-danger: #B5533C;
+  --color-shadow: rgba(43, 38, 34, 0.12);
+
+  /* ---- Typography ---- */
+  --font-display: "Fraunces", "Playfair Display", serif;
+  --font-body: "Manrope", "Inter", sans-serif;
+  --font-utility: "Manrope", sans-serif;
+
+  --fs-hero: clamp(2.6rem, 5vw + 1rem, 4.8rem);
+  --fs-h1: clamp(2.2rem, 3vw + 1rem, 3.4rem);
+  --fs-h2: clamp(1.7rem, 2vw + 1rem, 2.4rem);
+  --fs-h3: clamp(1.25rem, 1.2vw + 1rem, 1.6rem);
+  --fs-body: 1rem;
+  --fs-small: 0.875rem;
+  --fs-xs: 0.75rem;
+
+  /* ---- Spacing scale ---- */
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1.25rem;
+  --space-lg: 2rem;
+  --space-xl: 3.25rem;
+  --space-2xl: 5.5rem;
+
+  /* ---- Radius & shadow ---- */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 28px;
+  --radius-pill: 999px;
+
+  --shadow-soft: 0 8px 30px var(--color-shadow);
+  --shadow-lift: 0 20px 50px rgba(43, 38, 34, 0.18);
+  --glass-blur: blur(16px);
+
+  /* ---- Motion ---- */
+  --ease-swatch: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur-fast: 180ms;
+  --dur-med: 380ms;
+  --dur-slow: 650ms;
+
+  /* ---- Layout ---- */
+  --container-max: 1280px;
+  --nav-height: 78px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
