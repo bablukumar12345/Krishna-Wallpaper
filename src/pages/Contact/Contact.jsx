@@ -21,7 +21,7 @@ export default function Contact() {
           <ul className="contact-page__info-list">
             <li>
               <span className="contact-page__info-icon">📍</span>
-              <span>Sector 63, Noida, Uttar Pradesh</span>
+              <span>Sector 1, Bisrakh Jalalpur, Greater Noida, Bisrakh Jalalpur, Uttar Pradesh 201318</span>
             </li>
             <li>
               <span className="contact-page__info-icon">📞</span>
@@ -29,7 +29,7 @@ export default function Contact() {
             </li>
             <li>
               <span className="contact-page__info-icon">✉️</span>
-              <a href="mailto:hello@krishnawallpaper.com">hello@krishnawallpaper.com</a>
+              <a href="mailto:kchanchal0508@gmail.com">kchanchal0508@gmail.com</a>
             </li>
           </ul>
         </section>
@@ -45,15 +45,15 @@ export default function Contact() {
             <h3>WhatsApp</h3>
             <p>Chat with our team instantly</p>
           </a>
-          <a href="mailto:hello@krishnawallpaper.com" className="contact-card glass-panel">
+          <a href="mailto:kchanchal0508@gmail.com" className="contact-card glass-panel">
             <span className="contact-card__icon">✉️</span>
             <h3>Email</h3>
-            <p>hello@krishnawallpaper.com</p>
+            <p>kchanchal0508@gmail.com</p>
           </a>
           <div className="contact-card glass-panel">
             <span className="contact-card__icon">📍</span>
             <h3>Studio</h3>
-            <p>Sector 63, Noida, Uttar Pradesh</p>
+            <p>Sector 1, Bisrakh Jalalpur, Greater Noida, Bisrakh Jalalpur, Uttar Pradesh 201318</p>
           </div>
         </div>
 
